@@ -43,7 +43,7 @@
     <script>
     var hand = document.getElementById("hand");
     var button = document.getElementById("button");
-    hand.onclick = hand.ontouchstart = mouseActions;
+    hand.ontouchstart = mouseActions;
     //button.onclick = button.ontouchstart = mouseActions;
     
     var slap = new Tone.Player({
@@ -63,7 +63,7 @@
         
         slap.start();
         borat.start(3);
-        borat.dispose();
+        
     }
     </script>
 
